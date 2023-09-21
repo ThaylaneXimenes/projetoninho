@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+</head>
+<body>
+<script>
+var n1 = parseInt(prompt("Digite o primeiro valor inteiro:"));
+        var n2 = parseInt(prompt("Digite o segundo valor inteiro:"));
+        var op = prompt("Digite o operador:");
+var resultado=0;
+
+switch(op){
+case"+":
+resultado = n1 + n2;
+break;
+case "-":
+resultado = n1 - n2;
+break;
+case resultado = n1 * n2;
+break;
+case"/":
+if(n2==0){
+alert("Não é possível realizar divisão por zero!");
+}else{
+resultado = n1/n2;
+}
+break;
+default:
+alert("Operador inválido!");
+}
+document.write("Resultado: "+resultado);
+}
+</script>
+</body>
+</html> 

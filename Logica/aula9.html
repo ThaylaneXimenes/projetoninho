@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+	<head><meta charset="utf-8"></head>
+	<body>
+		<script>
+		var n1 = parseInt(prompt("digite o primeiro valor inteiro:"));
+		var n2 = parseInt(prompt("digite o segundo valor inteiro:"));
+		var op = prompt("digite o operador:");
+		var resultado = 0;
+		
+		if(op =="+"){
+			resultado = n1+n2;
+		}else{
+			if(op =="-"){
+			resultado = n1-n2;
+			}else{
+				if(op =="*"){
+				resultado = n1*n2;
+				}else{
+					if(op =="/"){
+						if(n2==0){
+							alert("Não é possivel realizar divisão por zero!!");
+						}else{
+							resultado = n1/n2;
+						}
+					}
+				}
+			}
+		}
+	
+
+			document.write("Resultado: " + resultado)
+		</script>
+	</body>
+</html>
